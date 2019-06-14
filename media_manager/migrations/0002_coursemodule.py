@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from __future__ import unicode_literals
+
 
 from django.db import models, migrations
 
@@ -20,7 +20,7 @@ class Migration(migrations.Migration):
                 ('api_collection_id', models.IntegerField(null=True)),
                 ('created', models.DateTimeField(auto_now_add=True)),
                 ('updated', models.DateTimeField(auto_now=True)),
-                ('course', models.ForeignKey(to='media_manager.Course')),
+                ('course', models.ForeignKey(to='media_manager.Course', on_delete=models.CASCADE)),
             ],
             options={
                 'verbose_name': 'module',

@@ -21,3 +21,4 @@ urlpatterns = [
     #url(r'^lti/', include('django_app_lti.urls', namespace="lti")),
     url(r'^', include('media_manager.urls', namespace="media_manager")),
 ]
+

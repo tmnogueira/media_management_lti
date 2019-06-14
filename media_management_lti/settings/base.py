@@ -40,13 +40,12 @@ INSTALLED_APPS = [
     'media_manager',
 ]
 
-MIDDLEWARE_CLASSES = [
+MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django_auth_lti.middleware_patched.MultiLTILaunchAuthMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'media_management_lti.middleware.LtiExceptionMiddleware',
@@ -206,7 +205,7 @@ LOGGING = {
     # here is a bit more explicit.  See link for more details:
     # https://docs.python.org/2.7/library/logging.config.html#dictionary-schema-details
     'root': {
-        'level': logging.DEBUG,
+        'level': logging.INFO,
         'handlers': ['default'],
     },
     'loggers': {
