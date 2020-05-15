@@ -14,7 +14,7 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-import views
+from . import views
 
 urlpatterns = [
     url(r'^$', views.app, name='index'),
