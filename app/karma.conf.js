@@ -11,7 +11,9 @@ module.exports = function(config) {
       require('./node_modules/karma-jasmine'),
       require('./node_modules/karma-ng-html2js-preprocessor'),
       //require('./node_modules/karma-phantomjs-launcher'),
-      require('./node_modules/karma-spec-reporter')
+      require('./node_modules/karma-spec-reporter'),
+      require('./node_modules/karma-chrome-launcher'),
+      require('./node_modules/karma-firefox-launcher')
     ],
 
     // frameworks to use
